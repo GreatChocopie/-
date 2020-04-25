@@ -1,0 +1,144 @@
+$font-family-roboto: Roboto,
+-apple-system,
+BlinkMacSystem,
+"Segoe UI",
+Oxygen,
+Ubuntu,
+Cantarell,
+"Open Sans",
+"Helvetica Neue",
+sans-serif;
+$font-family-opensans: "Open Sans",
+sans-serif;
+
+$color-orange1: #f8a32c;
+$color-blue1: #0097a2;
+$color-grey1: #000000;
+$color-grey0: #FFFFFF;
+$color-red1: #ec520c;
+$color-violet1: #4a154b;
+$color-green1: #005240;
+$color-yellow1: #ecb22e;
+
+body {
+      font-family: $font-family-roboto;
+      margin: 0;
+      padding: 0;
+      background-color: $color-grey0;
+      color: $color-grey1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+a {
+      text-decoration: none;
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+}
+
+
+
+
+
+
+.header__figures {
+      padding: 50px;
+}
+
+.burst {
+
+      position: relative;
+      text-align: center;
+      border-radius: 10.5px;
+}
+
+.burst:before,
+.burst:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+.burst:before {
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg);
+}
+
+.burst:after {
+      -webkit-transform: rotate(60deg);
+      -moz-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+      -o-transform: rotate(60deg);
+      transform: rotate(60deg);
+}
+
+.burst--orange {
+      background-color: $color-orange1;
+      width: 153px;
+      height: 153px;
+      border-radius: 10.5px;
+}
+
+.burst--orange:before,
+.burst--orange:after {
+      height: 153px;
+      width: 153px;
+      border-radius: 10.5px;
+      background-color: $color-orange1;
+}
+
+.burst--blue {
+      width: 153px;
+      height: 153px;
+      border-radius: 10.5px;
+      background-color: $color-blue1;
+}
+
+.burst--blue:before,
+.burst--blue:after {
+      height: 153px;
+      width: 153px;
+      border-radius: 10.5px;
+      background-color: $color-blue1;
+}
+
+.circle {
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50%;
+}
+
+.circle--red {
+      width: 294px;
+      height: 303px;
+      background: $color-red1;
+}
+
+.circle--violet {
+      width: 294px;
+      height: 303px;
+      background: $color-violet1;
+}
