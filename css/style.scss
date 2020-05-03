@@ -1,3 +1,55 @@
+@keyframes rollIn {
+      from {
+            opacity: 0.5;
+            transform: translate3d(-100px, 0, 0) rotate3d(0, 0, 1, -120deg);
+      }
+
+      to {
+            opacity: 1;
+            transform: none;
+      }
+}
+
+@keyframes slideLeft {
+      from {
+            transform: translate(0, 0);
+      }
+
+      to {
+            transform: translate(-200px, 0);
+      }
+
+}
+
+
+@keyframes zoomOutUp {
+      40% {
+            opacity: 1;
+            transform: scale3d(.475, .475, .475) translate3d(50%, 100%, 0);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      }
+
+      to {
+            opacity: 0;
+            transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+            transform-origin: center bottom;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      }
+}
+
+@keyframes rotateIn {
+      from {
+            transform: rotate3d(0, 0, 1, -200deg);
+            opacity: 0.8;
+      }
+
+      to {
+            transform: none;
+            opacity: 1;
+      }
+}
+
+
 $font-family-roboto: Roboto,
 -apple-system,
 BlinkMacSystem,
@@ -86,6 +138,11 @@ input[type="radio"].visually-hidden {
       background-size: 100% 100%;
       background-repeat: no-repeat;
       z-index: 2;
+      animation-name: rollIn;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+      animation-duration: 2s;
 }
 
 .header__figures-3 {
@@ -97,6 +154,11 @@ input[type="radio"].visually-hidden {
       background-image: url(../img/group-6.svg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      animation-name: zoomOutUp;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
 }
 
 .header__content {
@@ -419,7 +481,7 @@ input[type="radio"].visually-hidden {
             min-width: 1200px;
             max-width: 1400px;
             margin-bottom: 80px;
-            padding-bottom: 95px;
+            padding: 0 30px 95px 30px;
       }
 
       .header__figures {
@@ -437,14 +499,20 @@ input[type="radio"].visually-hidden {
             background-size: 100% 100%;
             background-repeat: no-repeat;
             z-index: 1;
+            animation-name: slideLeft;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+
       }
+
 
       .header__figures-2 {
             width: 320px;
             height: 300px;
             top: 135px;
             left: 1000px;
-
       }
 
       .header__figures-3 {
@@ -512,6 +580,10 @@ input[type="radio"].visually-hidden {
             transform: scale(1.2);
       }
 
+      .main {
+            padding: 0px 30px 0px 30px;
+      }
+
       .my-works {
             margin-bottom: 95px;
       }
@@ -549,6 +621,7 @@ input[type="radio"].visually-hidden {
       .footer {
             min-width: 1200px;
             max-width: 1400px;
+            padding: 0px 30px 0px 30px;
       }
 
       .footer__contacts {
@@ -599,6 +672,12 @@ input[type="radio"].visually-hidden {
             flex-shrink: 0;
       }
 
+      .footer__contacts-item--EM:hover {
+            animation-name: rotateIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+      }
+
       .footer__contacts-item--EM::after {
             width: 200px;
             height: 200px;
@@ -612,6 +691,12 @@ input[type="radio"].visually-hidden {
             order: 3;
             flex-shrink: 0;
 
+      }
+
+      .footer__contacts-item--G:hover {
+            animation-name: rotateIn;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
       }
 
       .footer__contacts-item--G::after {
