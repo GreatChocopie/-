@@ -271,14 +271,40 @@ input[type=radio].visually-hidden {
 }
 
 .work1__img-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  justify-content: flex-end;
   width: 100%;
-  height: 290px;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
   background-color: #175f34;
+}
+
+.work1__img--1 {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.work1__img--1:hover,
+.work1__img--1:focus {
+  z-index: 3;
+  transform: scale(1.1);
+}
+
+.work1__img--2 {
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+
+.work1__img--2:hover,
+.work1__img--2:focus {
+  transform: scale(1.2);
 }
 
 .my-works__work2 {
@@ -318,14 +344,40 @@ input[type=radio].visually-hidden {
 }
 
 .work2__img-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  justify-content: flex-end;
   width: 100%;
-  height: 290px;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
   background-color: #294dde;
+}
+
+.work2__img--1 {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.work2__img--1:hover,
+.work2__img--1:focus {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.work2__img--2 {
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+
+.work2__img--2:hover,
+.work2__img--2:focus {
+  transform: scale(1.2);
 }
 
 .footer {
@@ -399,7 +451,7 @@ input[type=radio].visually-hidden {
   outline: none;
 }
 
-.contacts-list__link:active,
+.contacts-list__link:hover,
 .contacts-list__link:focus {
   opacity: 0.7;
   transform: scale(1.2);
@@ -598,7 +650,12 @@ input[type=radio].visually-hidden {
   }
 
   .work1__img-container {
-    height: 640px;
+    min-height: 640px;
+    padding: 30px 30px 0 30px;
+  }
+
+  .work1__img--2 {
+    min-width: 800px;
   }
 
   .my-works__work2 {
@@ -622,7 +679,12 @@ input[type=radio].visually-hidden {
   }
 
   .work2__img-container {
-    height: 640px;
+    min-height: 640px;
+    padding: 50px 0 0 50px;
+  }
+
+  .work2__img--2 {
+    min-width: 800px;
   }
 
   .footer {
