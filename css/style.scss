@@ -1,11 +1,9 @@
 @keyframes rollIn {
       from {
-            opacity: 0.5;
-            transform: translate3d(-100px, 0, 0) rotate3d(0, 0, 1, -120deg);
+            transform: translate3d(-50px, 0, 0) rotate3d(0, 0, 1, -120deg);
       }
 
       to {
-            opacity: 1;
             transform: none;
       }
 }
@@ -24,13 +22,13 @@
 
 @keyframes zoomOutUp {
       40% {
-            opacity: 1;
+
             transform: scale3d(.475, .475, .475) translate3d(50%, 100%, 0);
             animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
       }
 
       to {
-            opacity: 0;
+
             transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
             transform-origin: center bottom;
             animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
@@ -40,12 +38,10 @@
 @keyframes rotateIn {
       from {
             transform: rotate3d(0, 0, 1, -200deg);
-            opacity: 0.8;
       }
 
       to {
             transform: none;
-            opacity: 1;
       }
 }
 
@@ -69,11 +65,13 @@ $color-grey2: #1a1b22;
 $color-grey0: #FFFFFF;
 $color-orange1: #f8a32c;
 $color-blue1: #0097a2;
+$color-blue2: #294dde;
 $color-grey1: #000000;
 $color-grey0: #FFFFFF;
 $color-red1: #ec520c;
 $color-violet1: #4a154b;
 $color-green1: #005240;
+$color-green2:#175f34;
 $color-yellow1: #ecb22e;
 
 body {
@@ -83,6 +81,7 @@ body {
       padding: 0;
       background-color: $color-grey0;
       color: $color-grey1;
+      overflow-x: hidden;
 }
 
 
@@ -262,6 +261,7 @@ input[type="radio"].visually-hidden {
       font-weight: 600;
       text-align: center;
       transition: 0.2s;
+      outline: none;
 }
 
 .skills-item__button:active,
@@ -306,6 +306,32 @@ input[type="radio"].visually-hidden {
 
 }
 
+.work1__link {
+      display: block;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 1.5;
+      color: $color-grey1;
+      text-decoration: none;
+}
+
+.work1__img-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 290px;
+      background-color: $color-green2;
+}
+
+.work1__img--1 {}
+
+.work1__img--2 {}
+
 .my-works__work2 {
       width: 100%;
       margin: 0;
@@ -330,6 +356,32 @@ input[type="radio"].visually-hidden {
       line-height: 1.5;
       color: $color-grey1;
 }
+
+.work2__link {
+      display: block;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 1.5;
+      color: $color-grey1;
+      text-decoration: none;
+}
+
+.work2__img-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 290px;
+      background-color: $color-blue2;
+}
+
+.work2__img--1 {}
+
+.work2__img--2 {}
 
 .footer {
       min-width: 320px;
@@ -399,6 +451,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-list__link {
       transition: 0.2s;
+      outline: none;
 }
 
 .contacts-list__link:active,
@@ -599,8 +652,20 @@ input[type="radio"].visually-hidden {
       }
 
       .work1__text {
+            margin-bottom: 15px;
+      }
+
+      .work1__link {
             margin-bottom: 25px;
       }
+
+      .work1__img-container {
+            height: 640px;
+      }
+
+      .work1__img--1 {}
+
+      .work1__img--2 {}
 
       .my-works__work2 {
             width: 100%;
@@ -617,6 +682,18 @@ input[type="radio"].visually-hidden {
       .work2__text {
             margin-bottom: 25px;
       }
+
+      .work2__link {
+            margin-bottom: 25px;
+      }
+
+      .work2__img-container {
+            height: 640px;
+      }
+
+      .work2__img--1 {}
+
+      .work2__img--2 {}
 
       .footer {
             min-width: 1200px;
@@ -672,7 +749,8 @@ input[type="radio"].visually-hidden {
             flex-shrink: 0;
       }
 
-      .footer__contacts-item--EM:hover {
+      .footer__contacts-item--EM:hover,
+      .footer__contacts-item--EM:focus {
             animation-name: rotateIn;
             animation-duration: 0.5s;
             animation-timing-function: ease-out;
@@ -693,7 +771,8 @@ input[type="radio"].visually-hidden {
 
       }
 
-      .footer__contacts-item--G:hover {
+      .footer__contacts-item--G:hover,
+      .footer__contacts-item--G:focus {
             animation-name: rotateIn;
             animation-duration: 0.5s;
             animation-timing-function: ease-out;
