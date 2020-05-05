@@ -425,11 +425,15 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 15px;
-      font-size: 24px;
+      font-size: 28px;
+      font-weight: bold;
       line-height: 1.5;
-      color: $color-grey1;
+      color: $color-violet1;
       text-decoration: none;
 }
+
+.work1__link:hover,
+.work1__link:focus {}
 
 .work1__img-container {
       display: flex;
@@ -485,11 +489,14 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 15px;
-      font-size: 24px;
+      font-size: 28px;
       line-height: 1.5;
-      color: $color-grey1;
+      color: $color-violet1;
       text-decoration: none;
 }
+
+.work2__link:hover,
+.work2__link:focus {}
 
 .work2__img-container {
       display: flex;
