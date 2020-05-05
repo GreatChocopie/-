@@ -66,13 +66,20 @@ $color-grey0: #FFFFFF;
 $color-orange1: #f8a32c;
 $color-blue1: #0097a2;
 $color-blue2: #294dde;
-$color-grey1: #000000;
-$color-grey0: #FFFFFF;
+$color-blue3: #203290;
+$color-blue4: #2e8ab7;
+$color-blue5: #35c5f0;
 $color-red1: #ec520c;
+$color-red2: #921e21;
 $color-violet1: #4a154b;
-$color-green1: #005240;
+$color-pink1: #de896a;
+$color-pink2: #fed4be;
+$color-pink3: #f4ede3;
+$color-green1: #000000;
 $color-green2:#175f34;
+$color-green3:#005240;
 $color-yellow1: #ecb22e;
+$color-yellow2: #f8a32c;
 
 body {
       font-family: $font-family-roboto;
@@ -264,12 +271,119 @@ input[type="radio"].visually-hidden {
       outline: none;
 }
 
-.skills-item__button:active,
-.skills-item__button:focus {
+.skills-item__button--1:hover,
+.skills-item__button--1:focus {
       background-color: $color-violet1;
       color: $color-grey0;
       transform: scale(1.2);
 }
+
+.skills-item__button--2:hover,
+.skills-item__button--2:focus {
+      background-color: $color-red1;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--3:hover,
+.skills-item__button--3:focus {
+      background-color: $color-yellow2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--4:hover,
+.skills-item__button--4:focus {
+      background-color: $color-blue1;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--5:hover,
+.skills-item__button--5:focus {
+      background-color: $color-pink1;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--6:hover,
+.skills-item__button--6:focus {
+      background-color: $color-blue4;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--7:hover,
+.skills-item__button--7:focus {
+      background-color: $color-red2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--8:hover,
+.skills-item__button--8:focus {
+      background-color: $color-blue2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--9:hover,
+.skills-item__button--9:focus {
+      background-color: $color-green2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--10:hover,
+.skills-item__button--10:focus {
+      background-color: $color-pink1;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--11:hover,
+.skills-item__button--11:focus {
+      background-color: $color-blue3;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--12:hover,
+.skills-item__button--12:focus {
+      background-color: $color-violet1;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--13:hover,
+.skills-item__button--13:focus {
+      background-color: $color-green3;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--14:hover,
+.skills-item__button--14:focus {
+      background-color: $color-blue4;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--15:hover,
+.skills-item__button--15:focus {
+      background-color: $color-green2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+.skills-item__button--16:hover,
+.skills-item__button--16:focus {
+      background-color: $color-yellow2;
+      color: $color-grey0;
+      transform: scale(1.2);
+}
+
+
 
 .my-works {
       width: 100%;
@@ -318,42 +432,27 @@ input[type="radio"].visually-hidden {
 }
 
 .work1__img-container {
-      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
-      padding: 20px 20px 0 20px;
-      box-sizing: border-box;
-      background-color: $color-green2;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
 }
 
 
-.work1__img--1 {
+.work1__img {
       width: 100%;
       height: 100%;
-      transition: 1s;
+      transition: 4s;
 
 }
 
-.work1__img--1:hover,
-.work1__img--1:focus {
+.work1__img:hover,
+.work1__img:focus {
       z-index: 3;
       transform: scale(1.1);
-}
-
-.work1__img--2 {
-      position: absolute;
-      width: 50%;
-      z-index: 2;
-      bottom: 0;
-      right: 0;
-      transition: 1s;
-}
-
-.work1__img--2:hover,
-.work1__img--2:focus {
-      transform: scale(1.2);
 }
 
 .my-works__work2 {
@@ -393,44 +492,27 @@ input[type="radio"].visually-hidden {
 }
 
 .work2__img-container {
-      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
-      padding: 20px 0 0 20px;
-      box-sizing: border-box;
-      background-color: $color-blue2;
-
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
 }
 
 
 
-.work2__img--1 {
+.work2__img {
       width: 100%;
       height: 100%;
-      transition: 1s;
+      transition: 4s;
 
 }
 
-.work2__img--1:hover,
-.work2__img--1:focus {
+.work2__img:hover,
+.work2__img:focus {
       transform: scale(1.1);
       z-index: 3;
-}
-
-.work2__img--2 {
-      position: absolute;
-      width: 50%;
-      z-index: 2;
-      bottom: 0;
-      right: 0;
-      transition: 1s;
-}
-
-.work2__img--2:hover,
-.work2__img--2:focus {
-      transform: scale(1.2);
 }
 
 .footer {
@@ -518,6 +600,7 @@ input[type="radio"].visually-hidden {
       margin-right: 10px;
       display: flex;
       justify-content: center;
+      z-index: 2;
 }
 
 .footer__contacts-item--EM::after {
@@ -540,6 +623,7 @@ input[type="radio"].visually-hidden {
       margin-right: 10px;
       display: flex;
       justify-content: center;
+      z-index: 2;
 }
 
 .footer__contacts-item--G::after {
@@ -561,6 +645,7 @@ input[type="radio"].visually-hidden {
       height: 130px;
       margin-top: -60px;
       display: flex;
+      z-index: 0;
 
 }
 
@@ -673,14 +758,6 @@ input[type="radio"].visually-hidden {
             border: solid 2px $color-grey2;
             font-size: 32px;
             cursor: pointer;
-            transition: 0.2s;
-      }
-
-      .skills-item__button:hover,
-      .skills-item__button:focus {
-            background-color: $color-violet1;
-            color: $color-grey0;
-            transform: scale(1.2);
       }
 
       .main {
@@ -709,15 +786,6 @@ input[type="radio"].visually-hidden {
             margin-bottom: 25px;
       }
 
-      .work1__img-container {
-            min-height: 640px;
-            padding: 30px 30px 0 30px;
-      }
-
-
-      .work1__img--2 {
-            min-width: 800px;
-      }
 
       .my-works__work2 {
             width: 100%;
@@ -739,15 +807,6 @@ input[type="radio"].visually-hidden {
             margin-bottom: 25px;
       }
 
-      .work2__img-container {
-            min-height: 640px;
-            padding: 50px 0 0 50px;
-      }
-
-
-      .work2__img--2 {
-            min-width: 800px;
-      }
 
       .footer {
             min-width: 1200px;
@@ -801,13 +860,12 @@ input[type="radio"].visually-hidden {
             height: 200px;
             margin: 0;
             flex-shrink: 0;
+            transition: 1s;
       }
 
       .footer__contacts-item--EM:hover,
       .footer__contacts-item--EM:focus {
-            animation-name: rotateIn;
-            animation-duration: 0.5s;
-            animation-timing-function: ease-out;
+            transform: scale(1.1);
       }
 
       .footer__contacts-item--EM::after {
@@ -838,8 +896,14 @@ input[type="radio"].visually-hidden {
       }
 
       .footer__contacts-item--T {
+            align-self: stretch;
             margin-top: 20px;
+            transition: 1s;
+      }
 
+      .footer__contacts-item--T:hover,
+      .footer__contacts-item--T:focus {
+            transform: rotate(-10deg);
       }
 
       .footer__contacts-item--T::after {
