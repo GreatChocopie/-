@@ -422,7 +422,8 @@ input[type="radio"].visually-hidden {
 
 .work1__link {
       display: block;
-      padding: 0;
+      width: fit-content;
+      padding: 10px 0;
       margin: 0;
       margin-bottom: 15px;
       font-size: 28px;
@@ -433,7 +434,9 @@ input[type="radio"].visually-hidden {
 }
 
 .work1__link:hover,
-.work1__link:focus {}
+.work1__link:focus {
+      transform: scale(1.2);
+}
 
 .work1__img-container {
       display: flex;
@@ -486,7 +489,8 @@ input[type="radio"].visually-hidden {
 
 .work2__link {
       display: block;
-      padding: 0;
+      padding: 10px 0;
+      width: fit-content;
       margin: 0;
       margin-bottom: 15px;
       font-size: 28px;
@@ -496,7 +500,9 @@ input[type="radio"].visually-hidden {
 }
 
 .work2__link:hover,
-.work2__link:focus {}
+.work2__link:focus {
+      transform: scale(1.2);
+}
 
 .work2__img-container {
       display: flex;
