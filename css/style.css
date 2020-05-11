@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Black.eot@");
+  src: url("../fonts/G Black.eot?#iefix") format("embedded-opentype"), url("../fonts/G Black.woff2") format("woff2"), url("../fonts/G Black.woff") format("woff"), url("../fonts/G Black.svg#G Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Bold.eot");
+  src: url("../fonts/G Bold.eot?#ie") format("woff2"), url("../fonts/G Bold.woff") format("woff"), url("../fonts/G Bold.svg#G Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Medium.eot");
+  src: url("../fonts/G Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/G Medium.woff2") format("woff2"), url("../fonts/G Medium.woff") format("woff"), url("../fonts/G Medium.svg#G Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Regular.eot");
+  src: url("../fonts/G Regular.eot?#iefix") format("../fonts/embedded-opentyp"), url("../fonts/G Regular.woff2") format("woff2"), url("../fonts/G Regular.woff") format("woff"), url("../fonts/G Regular.svg#G Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Semibold.eot");
+  src: url("../fonts/G Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/G Semibold.woff2") format("woff2"), url("../fonts/G Semibold.woff") format("woff"), url("../fonts/G Semibold.svg#G Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/G Super.eot");
+  src: url("../fonts/G Super.eot?#iefix") format("embedded-opentype"), url("../fonts/G Super.woff2") format("woff2"), url("../fonts/G Super.woff") format("woff"), url("../fonts/G Super.svg#G Super") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB02;
+}
 @keyframes rollIn {
   from {
     transform: translate3d(-50px, 0, 0) rotate3d(0, 0, 1, -120deg);
@@ -34,7 +88,7 @@
   }
 }
 body {
-  font-family: Roboto, -apple-system, BlinkMacSystem, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "custom";
   width: 100%;
   margin: 0;
   padding: 0;
