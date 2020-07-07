@@ -228,7 +228,7 @@ input[type="radio"].visually-hidden {
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
       animation-timing-function: ease;
-      animation-duration: 2s;
+      animation-duration: 3s;
 }
 
 .header__figures-3 {
@@ -244,7 +244,7 @@ input[type="radio"].visually-hidden {
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
       animation-timing-function: ease-in-out;
-      animation-duration: 2s;
+      animation-duration: 5s;
 }
 
 .header__content {
@@ -500,9 +500,8 @@ input[type="radio"].visually-hidden {
 
 }
 
-.work1__link {
-      display: block;
-      width: fit-content;
+.work__link {
+      display: inline-block;
       padding: 10px 0;
       margin: 0;
       margin-bottom: 15px;
@@ -511,12 +510,22 @@ input[type="radio"].visually-hidden {
       line-height: 1.5;
       color: $color-violet1;
       text-decoration: none;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
 }
 
-.work1__link:hover,
-.work1__link:focus {
+.work__link:hover,
+.work__link:focus {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
       transform: scale(1.2);
 }
+
 
 .work1__img-container {
       display: flex;
@@ -566,23 +575,7 @@ input[type="radio"].visually-hidden {
       color: $color-grey1;
 }
 
-.work2__link {
-      display: block;
-      padding: 10px 0;
-      width: fit-content;
-      margin: 0;
-      margin-bottom: 15px;
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 1.5;
-      color: $color-violet1;
-      text-decoration: none;
-}
 
-.work2__link:hover,
-.work2__link:focus {
-      transform: scale(1.2);
-}
 
 .work2__img-container {
       display: flex;
@@ -632,23 +625,6 @@ input[type="radio"].visually-hidden {
       color: $color-grey1;
 }
 
-.work3__link {
-      display: block;
-      padding: 10px 0;
-      width: fit-content;
-      margin: 0;
-      margin-bottom: 15px;
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 1.5;
-      color: $color-violet1;
-      text-decoration: none;
-}
-
-.work3__link:hover,
-.work3__link:focus {
-      transform: scale(1.2);
-}
 
 .work3__img-container {
       display: flex;
@@ -940,9 +916,19 @@ input[type="radio"].visually-hidden {
             margin-bottom: 15px;
       }
 
-      .work1__link {
+      .work__link {
             margin-bottom: 25px;
       }
+
+      .work__link:hover,
+      .work__link:focus {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
 
       .work1__img {
             display: none;
@@ -978,9 +964,7 @@ input[type="radio"].visually-hidden {
             margin-bottom: 25px;
       }
 
-      .work2__link {
-            margin-bottom: 25px;
-      }
+
 
       .work2__img {
             display: none;
@@ -1015,9 +999,6 @@ input[type="radio"].visually-hidden {
             margin-bottom: 25px;
       }
 
-      .work3__link {
-            margin-bottom: 25px;
-      }
 
       .work3__img {
             display: none;
@@ -1027,6 +1008,10 @@ input[type="radio"].visually-hidden {
             display: block;
             width: 100%;
             height: 100%;
+            -webkit-transition: 4s;
+            -moz-transition: 4s;
+            -ms-transition: 4s;
+            -o-transition: 4s;
             transition: 4s;
 
       }
@@ -1074,12 +1059,21 @@ input[type="radio"].visually-hidden {
       }
 
       .contacts-list__link {
+            display: block;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
             transition: 0.2s;
       }
 
       .contacts-list__link:hover,
       .contacts-list__link:focus {
             opacity: 0.7;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
             transform: scale(1.2);
       }
 
